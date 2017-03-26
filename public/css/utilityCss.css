@@ -1,0 +1,137 @@
+body
+{
+    margin:0;
+    padding:0;
+}
+.mainDiv{
+    width:100%;
+    height:100%;
+    background-color: white;
+}
+.signUpDiv{
+    padding-top: 10px;
+    width:1000px;
+    height:100%
+}
+.buttonCheckOut {
+    background-color: #50D2C2; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 340px;
+    display: inline-block;
+    font-size: 16px;
+
+    padding: 8px 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.topHeading{
+    color:#50D2C2 !important;font-size: 30px
+}
+.topHeadingOther{
+    color:#50D2C2 !important;font-size: 25px
+}
+.subTopHeading
+{
+    color:gray;font-size:16px;
+}
+.mainArea
+{
+    width:750px;height:430px;position: relative;
+
+}
+.middleBox
+{
+    height: 347px;
+}
+.locationText{
+    color:grey !important;
+    font-size: 14px
+}
+.footerDiv
+{
+    height: 120px;
+    background-color: #2b81af;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.pinkBox
+{
+    background-color: deeppink;width: 150px;height: 150px;
+}
+.iconBox
+{
+height:  55px;width: 55px;
+}
+.iconImage{
+    height:55px;
+    width: 55px;
+}
+.leftPointer{
+    display: inline-block;vertical-align: top;height: 200px;padding-top: 155px
+}
+.rightPointer{
+    display: inline-block;vertical-align: top;height: 200px;padding-top: 155px;margin-left: 30px
+}
+.marginForMiddle
+{
+    margin-top: 80px;
+}
+@media (min-height: 401px) and (max-height: 780px) {
+    .mainArea
+    {
+        width:650px;height:330px;position: relative;
+    }
+    .middleBox
+    {
+        height: 250px;
+    }
+
+    .buttonCheckOut {
+        background-color: #50D2C2; /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        width: 320px;
+        display: inline-block;
+        font-size: 14px;
+
+        padding: 6px 12px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .footerDiv
+    {
+        height: 100px;
+        background-color: #2b81af;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+    .pinkBox
+    {
+        background-color: deeppink;width: 85px;height: 100px;
+    }
+    .iconBox
+    {
+        height:  30px;width: 30px;
+    }
+    .iconImage{
+        height:40px;
+        width: 40px;
+    }
+    .leftPointer{
+        display: inline-block;vertical-align: top;height: 150px;padding-top: 120px
+    }
+    .rightPointer{
+        display: inline-block;vertical-align: top;height: 150px;padding-top: 120px;margin-left: 10px
+    }
+    .marginForMiddle
+    {
+        margin-top: 74px;
+    }
+}

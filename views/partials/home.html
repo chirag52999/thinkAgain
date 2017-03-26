@@ -1,13 +1,71 @@
+<link rel="stylesheet" type="text/css" href="css/utilityCss.css">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-<div >
-    <div style="height:100px" ng-include="'/partials/myOne.html'"></div>
-    <div ng-show="p===1" style="height:79%" ng-include="'/partials/pageOne.html'"></div>
-    <div ng-show="p===2" style="height:79%" ng-include="'/partials/pageTwo.html'"></div>
-    <div ng-show="p===3" style="height:79%" ng-include="'/partials/pageThree.html'"></div>
-    <div ng-show="p===4" style="height:79%" ng-include="'/partials/pageFour.html'"></div>
-    <div ng-show="p===5" style="height:79%" ng-include="'/partials/pageFive.html'"></div>
-    <div ng-show="p===6" style="height:79%" ng-include="'/partials/pageSix.html'"></div>
-    <div ng-show="p===7" style="height:79%" ng-include="'/partials/pageSeven.html'"></div>
-    <div ng-show="p===8" style="height:79%" ng-include="'/partials/pageEight.html'"></div>
-    <div  style="height:11%" ng-include="'/partials/myTwo.html'"></div>
+    header {
+        height: 80px;
+        background: gray;
+    }
+
+</style>
+
+
+<div id="container">
+    <table style="height: 100vh;width: 100%;">
+        <tr style="width: 100%;height: 80px">
+            <td>
+                <div style="height:80px" ng-include="'/partials/myOne.html'"></div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 100%;height:71%;" align="center">
+                <div ng-show="p===1"  ng-include="'/partials/pageOne.html'"></div>
+                <div ng-show="p===2"  ng-include="'/partials/pageTwo.html'"></div>
+                <div ng-show="p===3"  ng-include="'/partials/pageThree.html'"></div>
+                <div ng-show="p===4"  ng-include="'/partials/pageFour.html'"></div>
+                <div ng-show="p===5"  ng-include="'/partials/pageFive.html'"></div>
+                <div ng-show="p===6"  ng-include="'/partials/pageSix.html'"></div>
+                <div ng-show="p===7"  ng-include="'/partials/pageSeven.html'"></div>
+                <div ng-show="p===8"  ng-include="'/partials/pageEight.html'"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="height:11%" ng-include="'/partials/myTwo.html'">
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
 </div>
+
+
+<!--<table width="100%" >-->
+<!--<tr style="width: 100%">-->
+<!--<td>-->
+<!--<div style="height:80px" ng-include="'/partials/myOne.html'"></div>-->
+
+<!--</td>-->
+<!--</tr>-->
+<!--<tr >-->
+<!--<td style="width: 100%;background-color: #3B55A0">-->
+<!--<div ng-show="p===1" style="height:79%" ng-include="'/partials/pageOne.html'"></div>-->
+<!--</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td style="border: dashed 2px red;position: relative">-->
+<!--<div  style="height:11%" ng-include="'/partials/myTwo.html'"></div>-->
+<!--</td>-->
+<!--</tr>-->
+<!--</table>-->
+<!--&lt;!&ndash;<div ng-show="p===3" style="height:79%" ng-include="'/partials/pageThree.html'"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div ng-show="p===4" style="height:79%" ng-include="'/partials/pageFour.html'"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div ng-show="p===5" style="height:79%" ng-include="'/partials/pageFive.html'"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div ng-show="p===6" style="height:79%" ng-include="'/partials/pageSix.html'"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div ng-show="p===7" style="height:79%" ng-include="'/partials/pageSeven.html'"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div ng-show="p===8" style="height:79%" ng-include="'/partials/pageEight.html'"></div>&ndash;&gt;-->
+

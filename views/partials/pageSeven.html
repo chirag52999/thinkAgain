@@ -188,284 +188,295 @@
 </style>
 <div class="mainDiv" align="center">
     <div class="signUpDiv" align="center">
-        <span style="color:grey;font-size: 18px">
+        <span class="locationText">
             On Boarding
         </span><br>
-        <span style="color:#50D2C2;font-size: 40px;margin-top:10px ">
+        <span class="topHeadingOther">
            Now that we hav your basic information,<br> lets bring your onboard.
         </span>
-        <div style=";width: 1000px;height: 500px;margin-top: 45px">
-             <span ng-init="table1=false" ng-click="table1=!table1" style="color:grey;font-size: 18px">
+        <div class="mainArea" >
+             <span ng-init="table1=false" ng-click="table1=!table1" class="subTopHeading">
                    Choose the icons that best describe you
              </span>
-            <div style="width: 1000px;height: 90%;margin-top: 30px; border: dashed 1px red">
-                <div style="display: inline-block;vertical-align: top;height: 200px;border: dashed 1px red;padding-top: 195px">
-                    <span style="font-size: 35px;cursor:pointer;margin-top: 195px" ng-click="prevIcons()"><b><</b> </span>
+            <div class="middleBox" style="margin-top:30px">
+                <div class="leftPointer">
+                    <span style="font-size: 35px;cursor:pointer;" ng-click="prevIcons()"><b><</b> </span>
                 </div>
                 <div style="display: inline-block;width: 60%">
                 <table class="iconBox" ng-show="iconsTable==1" ng-class="{Shiftright:action==1,Shiftleft:action==0}" style="width: 60%; border-spacing: 10px;">
                     <tr class="" style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px;border: dashed 1px red">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td align="center" style="height: 70px;width: 70px;border: solid 4px #50D2C2 !important; border-radius: 50% !important;">
-                            <img  src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
+                        <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td align="center" class="iconBox"  >
+                            <img  src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/programmer.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/programmer.png" class="iconImage">
                         </td>
                     </tr>
                 </table>
                 <table ng-show="iconsTable==2" ng-class="{Shiftright:action==1,Shiftleft:action==0}"  style="width: 60%; border-spacing: 10px;">
                     <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td align="center" style="height: 70px;width: 70px;border: solid 4px #50D2C2 !important; border-radius: 50% !important;" >
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
+                        <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td align="center" class="iconBox" style="border: solid 4px #50D2C2 !important;border-radius: 50%" >
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/youngAge.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/youngAge.png" class="iconImage">
                         </td>
                     </tr>
                 </table>
                 <table ng-show="iconsTable==3" ng-class="{Shiftright:action==1,Shiftleft:action==0}"  style="width: 60%; border-spacing: 10px;">
                     <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
+                        <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
                         </td>
-                    </tr> <tr style="border: solid 1px black">
-                        <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
-                        </td>  <td style="height: 70px;width: 70px">
-                            <img src="images/middleAge.png" height="70px">
+                    </tr>
+                    <tr style="border: solid 1px black">
+                        <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
+                        </td>  <td class="iconBox">
+                            <img src="images/middleAge.png" class="iconImage">
                         </td>
                     </tr>
                 </table>
                 </div>
-                <div style="display: inline-block;box-shadow: -70px 0px 5px 0px white;vertical-align: top;height: 200px;border: dashed 1px red;padding-top: 195px">
+                <div class="rightPointer">
                     <span style="font-size: 35px;cursor:pointer;" ng-click="nextIcons()"> <b>></b> </span>
                 </div>
             </div>
-        </div>
-        <table style="width: 100%;">
+        <table style="width: 100%;margin-top: 13px">
             <tr>
                 <td width="34%">
-                    <button ng-click="prev()" class="buttonBack" style="float: right"> <i class="fa fa-arrow-circle-o-left" style="float: left;font-size: 25px" aria-hidden="true"></i> Back
+                    <button ng-click="prev()" class="buttonBack" style="float: right"> <i class="fa fa-arrow-circle-o-left" style="float: left;font-size: 20px" aria-hidden="true"></i> Back
                     </button>
                 </td>
                 <td width="33%">
-                    <button ng-click="next()" class="buttonCheckOut">Next  <i class="fa fa-arrow-circle-o-right" style="float: right;font-size: 25px" aria-hidden="true"></i>
+                    <button ng-click="next()" class="buttonCheckOut">Next  <i class="fa fa-arrow-circle-o-right" style="float: right;font-size: 20px" aria-hidden="true"></i>
                     </button>
                 </td>
                 <td width="33%">
@@ -473,6 +484,6 @@
                 </td>
             </tr>
         </table>
-        </button>
+      </div>
     </div>
 </div>
