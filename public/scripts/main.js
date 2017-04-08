@@ -6,7 +6,10 @@ require.config({
         'angularRoute' : 'angular-route/angular-route.min',
         'jquery' : 'jquery/dist/jquery.min',	
 		'angularLocalStorage' : 'angular-local-storage/dist/angular-local-storage.min',
-        'homeCtrl':'../app/homeCtrl'
+        'homeCtrl':'../app/homeCtrl',
+        'signUpCtrl':'../app/signUpCtrl',
+        'loginCtrl':'../app/loginCtrl',
+        'navBarCtrl':'../app/navBarCtrl'
     },
     shim: {
         

@@ -1,0 +1,100 @@
+<link rel="stylesheet" type="text/css" href="css/utilityCss.css">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        height: 80px;
+        background: gray;
+    }
+    .screen
+    {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 9999;
+        height:100%;
+        width:100%;
+        background-color: rgba(1,1,1,0.5);
+    }
+    .mainDialog
+    {
+        border: solid 1px #50D2C2;
+        background-color: white;
+        display:inline-block;
+        border-radius: 6px;
+        margin-top:11%;
+        width: 800px;
+        height: 350px
+    }
+</style>
+<div class="screen" align="center" ng-show="openLoginDiv">
+    <div class="mainDialog" align="center">
+        <span style="float: right;font-size: 20px;margin-right: 10px;margin-top: 3px;cursor: pointer" ng-click="openLoginDiv=false">X</span>
+        <br>
+        <span style="font-size: 30px;color: #50D2C2">Choose your platform to login</span>
+        <table style="width: 600px;margin-top: 35px;height: 200px">
+            <tr>
+                <td align="center">
+                    <div style="width: 80px;height: 80px;border-radius: 8%;background-color: #3b5998">
+                        <i style="margin-top: 10px;color: white" class="fa fa-facebook fa-4x" aria-hidden="true"></i>
+                    </div>
+                </td>
+                <td align="center">
+                    <div style="width: 80px;height: 80px;border-radius: 8%;background-color: #55acee">
+                        <i style="margin-top: 10px;color: white" class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+                    </div>
+                </td>
+                <td align="center">
+                    <div style="width: 80px;height: 80px;border-radius: 8%;background-color: #9b6954">
+                        <i style="margin-top: 8px;color: white" class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="container">
+    <table style="height: 100vh;width: 100%;">
+        <tr style="width: 100%;height: 80px">
+            <td>
+                <div style="height:80px" ng-include="'/partials/navBar.html'"></div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 100%;height:71%;" align="center">
+                <div class="mainDiv" align="center">
+                    <div class="signUpDiv" align="center">
+                        <img src="images/mainCover.png" style="width: 1000px;margin-top: 60px">
+                            <table style="width: 100%;margin-top: 50px">
+                                <tr>
+                                    <td width="34%">
+                                        <button  ng-click="openLoginDiv=true" class="authButton" style="float: right"> Login
+                                        </button>
+                                    </td>
+                                    <td width="33%">
+
+                                    </td>
+                                    <td width="33%">
+                                        <button ng-click="signUp()" class="authButton" style="float: left"> Sign Up
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="height:11%" ng-include="'/partials/footer.html'">
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>

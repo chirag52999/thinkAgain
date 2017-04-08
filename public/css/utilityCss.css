@@ -22,6 +22,7 @@ body
     width: 340px;
     display: inline-block;
     font-size: 16px;
+    outline: none;
 
     padding: 8px 14px;
     border-radius: 3px;
@@ -80,6 +81,38 @@ height:  55px;width: 55px;
 {
     margin-top: 80px;
 }
+.buttonBack {
+    background-color: darkgrey; /* Green */
+    border: none;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+
+    padding: 8px 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.authButton {
+    background-color: #50D2C2; /* Green */
+    border: none;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+
+    padding: 8px 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
 @media (min-height: 401px) and (max-height: 780px) {
     .mainArea
     {
@@ -99,6 +132,7 @@ height:  55px;width: 55px;
         width: 310px;
         display: inline-block;
         font-size: 14px;
+        outline: none;
 
         padding: 8px 14px;
         border-radius: 3px;
