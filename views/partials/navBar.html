@@ -34,6 +34,20 @@
         margin: 4px 2px;
         cursor: pointer;
     }
+    .button1 {
+        background-color: #50D2C2; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 50px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
     hr
     {
         margin-top: 0em;
@@ -48,10 +62,13 @@
                 <img height="73px" src="images/logo.png">
             </td>
             <td>
-                <span style="font-size: 17px">Products | Company | About </span>
+                <span ng-show="!isLogin()" style="font-size: 17px">Products | Company | About </span>
+                <span ng-show="isLogin()" style="font-size: 17px"> <i class="fa fa-user" style="font-size: 24px" aria-hidden="true"></i> &nbsp;  {{userName}} {{userLevel}} </span>
             </td>
             <td>
                 <button ng-show="isNotSignIn()" class="button button4" ng-click="signin()">Sign in</button>
+                <button ng-show="isLogin()" class="button1 button4"><i class="fa fa-money" style="font-size: 20px" aria-hidden="true"></i> &nbsp; Request Payout</button>
+                <button ng-show="isLogin()" class="button1 button4" style="width: 190px" ng-click="signout()"><i class="fa fa-sign-out" style="font-size: 20px" aria-hidden="true"></i> &nbsp; Logout</button>
             </td>
         </tr>
     </table>

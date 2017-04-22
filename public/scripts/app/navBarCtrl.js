@@ -19,6 +19,17 @@ define(['angular'],function(angular){
             $scope.signin=function(){
                 $location.path("/login");
             }
+            $scope.isLogin=function(){
+                if($location.path()==="/landingPage"){
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            $scope.signout=function(){
+                $location.path("/login");
+            }
 
         }
 

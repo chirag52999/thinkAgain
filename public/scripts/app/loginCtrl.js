@@ -12,9 +12,9 @@ define(['angular'],function(angular){
                 $location.path("/signup")
 
             };
-            //$scope.loginInBy=function(){
-            //
-            //}
+            $scope.loginInBy=function(){
+                $location.path("/landingPage")
+            }
 
         }
 

@@ -70,16 +70,42 @@
         opacity: 1;
         transform: scale(1);
     }
+    .pinkBox:hover {
+        -webkit-transform:scale(1.1);
+        -moz-transform:scale(1.1);
+        -ms-transform:scale(1.1);
+        -o-transform:scale(1.1);
+        transform:scale(1.1);
+
+    }
+    .pinkBox:hover:active {
+        box-shadow: 0 3px 0 rgba(0,0,0,0);
+        transform: translateY(3px);
+
+    }
+    .colorOne{
+        background-color: #F4989D;
+    }
+    .colorTwo{
+        background-color: #F26D7E;
+    }
+    .colorThree{
+        background-color: #9E003A;
+    }
+    .colorFour{
+        background-color: #ED145B;
+    }
+
 </style>
 <div class="mainDiv" align="center">
-    <div class="signUpDiv" align="center">
+    <div class="signUpDiv Shiftleft" align="center">
         <span class="locationText">
             Basic Information > Social Information > <b>Social Status</b>
         </span><br>
         <span class="topHeadingOther">
             Welcome! Let us connect your basic information<br> to find your earning potential
         </span>
-        <div class="mainArea">
+        <div class="mainArea Shiftleft">
 
              <span class="subTopHeading">
                     How big of Social superstar are you?
@@ -87,18 +113,18 @@
             <div style="margin-top: 15px;">
                 <table style="width: 47%;border-spacing: 15px;">
                     <tr align="center">
-                        <td class="pinkBox">
+                        <td class="pinkBox colorOne">
                             <span style="font-size: 26px;color: white"><b> < 500 </b></span>
                         </td>
-                        <td class="pinkBox">
+                        <td class="pinkBox colorTwo">
                             <span style="font-size: 26px;color: white"><b> 500 - 2K </b></span>
                         </td>
                     </tr>
                     <tr align="center">
-                        <td class="pinkBox">
+                        <td class="pinkBox colorThree">
                             <span style="font-size: 26px;color: white"><b> 10k > </b></span>
                         </td>
-                        <td class="pinkBox">
+                        <td class="pinkBox colorFour">
                             <span style="font-size: 26px;color: white"><b> 2k - 10k</b></span>
                         </td>
                     </tr>
@@ -121,5 +147,6 @@
             </tr>
         </table>
         </button>
+        </div>
     </div>
 </div>

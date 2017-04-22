@@ -43,6 +43,11 @@ body
     width:750px;height:430px;position: relative;
 
 }
+.mainAreaLanding
+{
+    width:970px;height:540px;position: relative;
+
+}
 .middleBox
 {
     height: 347px;
@@ -61,7 +66,7 @@ body
 }
 .pinkBox
 {
-    background-color: deeppink;width: 150px;height: 150px;
+    width: 150px;height: 150px;
 }
 .iconBox
 {
@@ -113,10 +118,29 @@ height:  55px;width: 55px;
     border-radius: 3px;
     cursor: pointer;
 }
+.landingLongBox
+{
+    border: dashed blue 1px;width: 300px;height: 390px;margin-top:25px;display: inline-block
+}
+.landingLongBoxMiddle
+{
+    border: dashed blue 1px;width: 300px;height: 390px;margin-top:25px;display: inline-block;margin-left: 25px;margin-right: 25px
+}
+.landingSmallBox
+{
+    border: dashed yellow 1px;width: 300px;height: 100px;display: inline-block
+}.landingSmallBoxMiddle
+{
+    border: dashed yellow 1px;width: 300px;height: 100px;display: inline-block;margin-left: 25px;margin-right: 25px
+}
 @media (min-height: 401px) and (max-height: 780px) {
     .mainArea
     {
         width:650px;height:330px;position: relative;
+    }
+    .mainAreaLanding
+    {
+        width:970px;height:440px;position: relative;
     }
     .middleBox
     {
@@ -148,7 +172,7 @@ height:  55px;width: 55px;
     }
     .pinkBox
     {
-        background-color: deeppink;width: 85px;height: 100px;
+        width: 85px;height: 100px;
     }
     .iconBox
     {
@@ -168,4 +192,34 @@ height:  55px;width: 55px;
     {
         margin-top: 74px;
     }
+    .landingLongBox
+    {
+        border: dashed blue 1px;width: 300px;height: 330px;margin-top:25px;display: inline-block
+    }
+    .landingLongBoxMiddle
+    {
+        border: dashed blue 1px;width: 300px;height: 330px;margin-top:25px;display: inline-block;margin-left: 25px;margin-right: 25px
+    }
+    .landingSmallBox
+    {
+        border: dashed yellow 1px;width: 300px;height: 70px;display: inline-block
+    }.landingSmallBoxMiddle
+     {
+         border: dashed yellow 1px;width: 300px;height: 70px;display: inline-block;margin-left: 25px;margin-right: 25px
+     }
+
+
 }
+.Shiftright{position:relative;-webkit-animation:animateright 0.6s;animation:animateright 0.6s}
+@-webkit-keyframes animateright{from{right:-150px;opacity:0} to{right:0;opacity:1}}
+@keyframes animateright{from{right:-150px;opacity:0} to{right:0;opacity:1}}
+.Shiftleft{position:relative;-webkit-animation:animateleft 0.6s;animation:animateleft 0.6s}
+@-webkit-keyframes animateleft{from{left:-150px;opacity:0} to{left:0;opacity:1}}
+@keyframes animateleft{from{left:-150px;opacity:0} to{left:0;opacity:1}}
+.ShiftTop{position:relative;-webkit-animation:animatetop 0.6s;animation:animatetop 0.6s}
+@-webkit-keyframes animatetop{from{top:-150px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-150px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-bottom{position:relative;-webkit-animation:animatebottom 0.4s;animation:animatebottom 0.4s}
+@-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
+@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+

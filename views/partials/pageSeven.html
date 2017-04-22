@@ -172,16 +172,29 @@
     @-webkit-keyframes animateleft{from{left:-150px;opacity:0} to{left:0;opacity:1}}
     @keyframes animateleft{from{left:-150px;opacity:0} to{left:0;opacity:1}}
 
+    .iconBox:hover {
+        -webkit-transform:scale(1.1);
+        -moz-transform:scale(1.1);
+        -ms-transform:scale(1.1);
+        -o-transform:scale(1.1);
+        transform:scale(1.1);
+
+    }
+    .iconBox:hover:active {
+        box-shadow: 0 3px 0 rgba(0,0,0,0);
+        transform: translateY(3px);
+
+    }
 </style>
 <div class="mainDiv" align="center">
-    <div class="signUpDiv" align="center">
+    <div class="signUpDiv Shiftleft" align="center">
         <span class="locationText">
             On Boarding
         </span><br>
         <span class="topHeadingOther">
            Now that we hav your basic information,<br> lets bring your onboard.
         </span>
-        <div class="mainArea" >
+        <div class="mainArea Shiftleft" >
              <span ng-init="table1=false" ng-click="table1=!table1" class="subTopHeading">
                    Choose the icons that best describe you
              </span>
@@ -190,7 +203,7 @@
                     <span style="font-size: 35px;cursor:pointer;" ng-click="prevIcons()"><b><</b> </span>
                 </div>
                 <div style="display: inline-block;width: 60%">
-                <table class="iconBox" ng-show="iconsTable==1" ng-class="{Shiftright:action==1,Shiftleft:action==0}" style="width: 60%; border-spacing: 10px;">
+                <table  ng-show="iconsTable==1" ng-class="{Shiftright:action==1,Shiftleft:action==0}" style="width: 60%; border-spacing: 10px;">
                     <tr class="" style="border: solid 1px black">
                         <td class="iconBox">
                             <img src="images/programmer.png" class="iconImage">

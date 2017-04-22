@@ -6,7 +6,8 @@ define([
     'homeCtrl',
     'signUpCtrl',
     'loginCtrl',
-    'navBarCtrl'
+    'navBarCtrl',
+    'landingPageCtrl'
 
 ], function (angular) {
     'use strict';
@@ -17,7 +18,8 @@ define([
         'homeCtrl',
         'signUpCtrl',
         'loginCtrl',
-        'navBarCtrl'
+        'navBarCtrl',
+        'landingPageCtrl'
     ]);
 
     
@@ -35,6 +37,10 @@ define([
             }). when('/login', {
                 templateUrl: 'partials/login.html',
                 controller: 'loginCtrl',
+                access: { requiredLogin: false }
+            }). when('/landingPage', {
+                templateUrl: 'partials/landingPage.html',
+                controller: 'landingPageCtrl',
                 access: { requiredLogin: false }
             }).
                 otherwise({

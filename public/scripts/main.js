@@ -9,7 +9,8 @@ require.config({
         'homeCtrl':'../app/homeCtrl',
         'signUpCtrl':'../app/signUpCtrl',
         'loginCtrl':'../app/loginCtrl',
-        'navBarCtrl':'../app/navBarCtrl'
+        'navBarCtrl':'../app/navBarCtrl',
+        'landingPageCtrl':"../app/landingPageCtrl"
     },
     shim: {
         
