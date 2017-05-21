@@ -20,7 +20,7 @@ define(['angular'],function(angular){
                 $location.path("/login");
             }
             $scope.isLogin=function(){
-                if($location.path()==="/landingPage"){
+                if($location.path()==="/landingPage" || $location.path()==="/evengelizedCampaigns" || $location.path()==="/moreBrands" ){
                     return true;
                 }
                 else {

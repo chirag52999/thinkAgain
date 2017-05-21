@@ -1,0 +1,209 @@
+<link rel="stylesheet" type="text/css" href="css/utilityCss.css">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        height: 80px;
+        background: gray;
+    }
+    .screen
+    {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 9999;
+        height:100%;
+        width:100%;
+        background-color: rgba(1,1,1,0.5);
+    }
+    .mainDialog
+    {
+        border: solid 1px #50D2C2;
+        background-color: white;
+        display:inline-block;
+        border-radius: 6px;
+        margin-top: 11%;
+        width: 800px;
+        height: 350px
+    }
+    /*.monitor-containerAnimation{*/
+    /*position: absolute;*/
+    /*top:16%;*/
+    /*left: 12%;*/
+    /*right: auto;*/
+    /*animation: monitorAnim 3s;*/
+    /*}*/
+    /*@keyframes monitorAnim {*/
+    /*0%{top:-500px}*/
+    /*25%{top:16%}*/
+    /*}*/
+    .loginBy{
+        width: 80px;height: 80px;border-radius: 8%;
+    }
+    .loginBy:hover {
+        -webkit-transform:scale(1.1);
+        -moz-transform:scale(1.1);
+        -ms-transform:scale(1.1);
+        -o-transform:scale(1.1);
+        transform:scale(1.1);
+
+    }
+    .loginBy:hover:active {
+        box-shadow: 0 3px 0 rgba(0,0,0,0);
+        transform: translateY(3px);
+
+    }
+    body
+    {
+        margin:0;
+        padding:0;
+    }
+    .mainDiv{
+        width:100%;
+        height:100%;
+        background-color: white;
+    }
+    .signUpDiv{
+        padding-top: 28px;
+        width:1000px;
+
+        height:100%
+    }
+</style>
+
+
+<div id="container ">
+    <table style="height: 100vh;width: 100%;">
+        <tr style="width: 100%;height: 80px">
+            <td>
+                <div style="height:80px" ng-include="'/partials/navBar.html'"></div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 100%;height:71%;" align="center">
+                <div class="mainDiv" align="center">
+                    <div class="signUpDiv Shiftleft" align="center">
+                        <div class="mainAreaLanding Shiftleft" style="position: relative " align="center">
+                            <span style="font-size: 26px;margin-top: 10px" class="color">Evangelize more brands ! </span>
+                            <br>
+                            <table width="100%" style="margin-top: 20px">
+                                <tr>
+                                    <th>
+                                        <span style="margin-left: 8px; font-size: 20px" >Advertiser</span>
+                                    </th>
+                                    <th style="width: 21%">
+                                        <span style="margin-left: 8px; font-size: 20px" >Platforms</span>
+                                    </th>
+                                    <th>
+                                        <span style="margin-left: 8px; font-size: 20px" >Goal</span>
+                                    </th>
+                                    <th>
+                                        <span style="margin-left: 8px; font-size: 20px" >Payout</span>
+                                    </th>
+                                    <th>
+                                        <span style="margin-left: 8px; font-size: 20px" ></span>
+                                    </th>
+                                </tr>
+                                <tr style="height: 60px">
+                                    <td >
+                                        <i style="font-size: 32px;margin-right: 10px;margin-left: 20px" class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <span style="font-size: 20px;vertical-align: top">Audi Campaign</span>
+                                    <td >
+                                        <i style="font-size: 32px;margin-left: 10px;margin-right: 10px" class="fa fa-facebook" aria-hidden="true"></i>
+                                        <i style="font-size: 32px;margin-left: 10px;margin-right: 10px" class="fa fa-twitter" aria-hidden="true"></i>
+                                        <i style="font-size: 32px;margin-left: 10px;margin-right: 10px" class="fa fa-instagram" aria-hidden="true"></i>
+                                        <i style="font-size: 32px;margin-left: 10px;margin-right: 10px" class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+                                    </td>
+                                    <td align="center">
+                                        <span style="margin-left: 8px; font-size: 20px" >Genrate 10,000 likes</span>
+                                    </td>
+                                    <td align="center">
+                                        <span style="margin-left: 8px; font-size: 20px" >$0.65/like</span>
+                                    </td>
+                                    <td align="center" style="cursor: pointer">
+                                        <i  style="margin-right: 3px;margin-top:2px;font-size: 20px;" class="fa fa-plus-square color" aria-hidden="true"></i>
+                                        <span style="margin-left: 2px; font-size: 20px" >I'm intersted</span>
+                                    </td>
+                                </tr>
+                                <tr style="height: 60px">
+                                    <td>
+                                        <i style="font-size: 32px;margin-right: 10px;margin-left: 20px" class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <span style="font-size: 20px;vertical-align: top">BMW Campaign</span>
+                                    <td >
+                                        <i style="font-size: 32px;margin-left: 10px;margin-right: 10px" class="fa fa-twitter" aria-hidden="true"></i>
+                                    </td>
+                                    <td align="center">
+                                        <span style="margin-left: 8px; font-size: 20px" >8,000 Clicks</span>
+                                    </td>
+                                    <td align="center">
+                                        <span style="margin-left: 8px; font-size: 20px" >$0.65/click</span>
+                                    </td>
+                                    <td align="center" style="cursor: pointer">
+                                        <i  style="margin-right: 3px;margin-top:2px;font-size: 20px;" class="fa fa-plus-square color" aria-hidden="true"></i>
+                                        <span style="margin-left: 2px; font-size: 20px" >I'm intersted</span>
+                                    </td>
+                                </tr>
+                                <tr style="height: 60px">
+                                    <td >
+                                        <i style="font-size: 32px;margin-right: 10px;margin-left: 20px" class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <span style="font-size: 20px;vertical-align: top">Jaguar Campaign</span>
+                                    <td >
+                                        <i style="font-size: 32px;margin-left: 10px;margin-right: 10px" class="fa fa-facebook" aria-hidden="true"></i>
+                                        <i style="font-size: 32px;margin-left: 10px;margin-right: 10px" class="fa fa-twitter" aria-hidden="true"></i>
+                                    </td>
+                                    <td align="center">
+                                        <span style="margin-left: 8px; font-size: 20px" >1000 Installs</span>
+                                    </td>
+                                    <td align="center">
+                                        <span style="margin-left: 8px; font-size: 20px" >$0.65/install</span>
+                                    </td>
+                                    <td align="center" style="cursor: pointer">
+                                        <i  style="margin-right: 3px;margin-top:2px;font-size: 20px;" class="fa fa-plus-square color" aria-hidden="true"></i>
+                                        <span style="margin-left: 2px; font-size: 20px" >I'm intersted</span>
+                                    </td>
+                                </tr>
+                                <tr style="height: 60px">
+                                    <td >
+                                        <i style="font-size: 32px;margin-right: 10px;;margin-left: 20px" class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <span style="font-size: 20px;vertical-align: top">Bentley Campaign</span>
+                                    <td >
+                                        <i style="font-size: 32px;margin-left: 10px;margin-right: 10px" class="fa fa-facebook" aria-hidden="true"></i>
+                                        <i style="font-size: 32px;margin-left: 10px;margin-right: 10px" class="fa fa-twitter" aria-hidden="true"></i>
+                                        <i style="font-size: 32px;margin-left: 10px;margin-right: 10px" class="fa fa-instagram" aria-hidden="true"></i>
+
+                                    </td>
+                                    <td align="center">
+                                        <span style="margin-left: 8px; font-size: 20px" >69 Retweets</span>
+                                    </td>
+                                    <td align="center">
+                                        <span style="margin-left: 8px; font-size: 20px" >$0.65/retweet</span>
+                                    </td>
+                                    <td align="center" style="cursor: pointer">
+                                        <i  style="margin-right: 3px;margin-top:2px;font-size: 20px;" class="fa fa-plus-square color" aria-hidden="true"></i>
+                                        <span style="margin-left: 2px; font-size: 20px" >I'm intersted</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <div style="position: absolute;bottom: 8px;right: 20px;cursor: pointer" ng-click="showLess()">
+                                <i  style="font-size: 27px;cursor: pointer;margin-top: 4px" class="fa fa-arrow-circle-up color"  aria-hidden="true"></i>
+                                <span style="margin-left: 8px; font-size: 20px" >Show less</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="height:11%" ng-include="'/partials/footer.html'">
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>

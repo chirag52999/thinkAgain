@@ -7,7 +7,12 @@ define(['angular'],function(angular){
             console.log("i am in landinPageCtrl ctrl ----")
             $scope.userName="Revee Luiz";
             $scope.userLevel="(Level 3 Advangelist)"
-
+            $scope.showCampaingsEvangelized=function(){
+                $location.path("/evengelizedCampaigns");
+            }
+            $scope.showMoreBrands=function(){
+                $location.path("/moreBrands");
+            }
         }
 
 

@@ -7,7 +7,9 @@ define([
     'signUpCtrl',
     'loginCtrl',
     'navBarCtrl',
-    'landingPageCtrl'
+    'landingPageCtrl',
+    'evengelizedCampiagnCtrl',
+    'moreBrandsCtrl'
 
 ], function (angular) {
     'use strict';
@@ -19,7 +21,9 @@ define([
         'signUpCtrl',
         'loginCtrl',
         'navBarCtrl',
-        'landingPageCtrl'
+        'landingPageCtrl',
+        'evengelizedCampiagnCtrl',
+        'moreBrandsCtrl'
     ]);
 
     
@@ -41,6 +45,14 @@ define([
             }). when('/landingPage', {
                 templateUrl: 'partials/landingPage.html',
                 controller: 'landingPageCtrl',
+                access: { requiredLogin: false }
+            }). when('/evengelizedCampaigns', {
+                templateUrl: 'partials/evangelizedCampaigns.html',
+                controller: 'evengelizedCampiagnCtrl',
+                access: { requiredLogin: false }
+            }). when('/moreBrands', {
+                templateUrl: 'partials/moreBrands.html',
+                controller: 'moreBrandsCtrl',
                 access: { requiredLogin: false }
             }).
                 otherwise({

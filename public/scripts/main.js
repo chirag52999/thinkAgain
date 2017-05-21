@@ -10,7 +10,10 @@ require.config({
         'signUpCtrl':'../app/signUpCtrl',
         'loginCtrl':'../app/loginCtrl',
         'navBarCtrl':'../app/navBarCtrl',
-        'landingPageCtrl':"../app/landingPageCtrl"
+        'landingPageCtrl':"../app/landingPageCtrl",
+        'evengelizedCampiagnCtrl':"../app/evengelizedCampiagnCtrl",
+        'moreBrandsCtrl':"../app/moreBrandsCtrl"
+
     },
     shim: {
         
