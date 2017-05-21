@@ -13,6 +13,9 @@ body
     width:1000px;
     height:100%
 }
+.color{
+    color: #50D2C2;
+}
 .buttonCheckOut {
     background-color: #50D2C2; /* Green */
     border: none;
@@ -120,18 +123,18 @@ height:  55px;width: 55px;
 }
 .landingLongBox
 {
-    border: dashed blue 1px;width: 300px;height: 390px;margin-top:25px;display: inline-block
+    border: solid black 1px;width: 300px;height: 390px;margin-top:25px;display: inline-block;vertical-align: top;
 }
 .landingLongBoxMiddle
 {
-    border: dashed blue 1px;width: 300px;height: 390px;margin-top:25px;display: inline-block;margin-left: 25px;margin-right: 25px
+    border: solid black 1px;width: 300px;height: 390px;margin-top:25px;display: inline-block;margin-left: 25px;margin-right: 25px;vertical-align: top;
 }
 .landingSmallBox
 {
-    border: dashed yellow 1px;width: 300px;height: 100px;display: inline-block
+    border: solid black 1px;width: 300px;height: 100px;display: inline-block;vertical-align: top;
 }.landingSmallBoxMiddle
 {
-    border: dashed yellow 1px;width: 300px;height: 100px;display: inline-block;margin-left: 25px;margin-right: 25px
+     border: solid black 1px;width: 300px;height: 100px;display: inline-block;margin-left: 25px;margin-right: 25px;vertical-align: top;
 }
 @media (min-height: 401px) and (max-height: 780px) {
     .mainArea
@@ -194,18 +197,21 @@ height:  55px;width: 55px;
     }
     .landingLongBox
     {
-        border: dashed blue 1px;width: 300px;height: 330px;margin-top:25px;display: inline-block
+        border: solid black 1px;width: 300px;height: 330px;margin-top:25px;display: inline-block;
+        vertical-align: top;
     }
     .landingLongBoxMiddle
     {
-        border: dashed blue 1px;width: 300px;height: 330px;margin-top:25px;display: inline-block;margin-left: 25px;margin-right: 25px
+        border: solid black 1px;width: 300px;height: 330px;margin-top:25px;display: inline-block;margin-left: 25px;margin-right: 25px;
+        vertical-align: top;
     }
     .landingSmallBox
     {
-        border: dashed yellow 1px;width: 300px;height: 70px;display: inline-block
+        border: solid black 1px;width: 300px;height: 70px;display: inline-block;
+        vertical-align: top;
     }.landingSmallBoxMiddle
      {
-         border: dashed yellow 1px;width: 300px;height: 70px;display: inline-block;margin-left: 25px;margin-right: 25px
+         border: solid black 1px;width: 300px;height: 70px;display: inline-block;margin-left: 25px;margin-right: 25px;  vertical-align: top;
      }
 
 
